@@ -1,0 +1,43 @@
+{
+  "name": "frontend",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "bootstrap": "4.0.0-beta",
+    "font-awesome": "^4.7.0",
+    "fullpage-react": "^3.0.4",
+    "jquery": "^3.2.1",
+    "object-assign": "^4.1.1",
+    "popper.js": "^1.12.5",
+    "react": "^15.6.1",
+    "react-addons-css-transition-group": "^15.6.0",
+    "react-addons-transition-group": "^15.6.0",
+    "react-autocomplete": "^1.5.10",
+    "react-bootstrap": "^0.31.1",
+    "react-bootstrap-date-picker": "^5.1.0",
+    "react-dom": "^15.6.1",
+    "react-file-input": "^0.2.5",
+    "react-loading": "^0.1.4",
+    "react-magic": "^0.2.3",
+    "react-redux": "^5.0.5",
+    "react-router-dom": "^4.1.2",
+    "react-scroll": "^1.5.4",
+    "react-scrollable-anchor": "^0.4.2",
+    "react-select": "^1.0.0-rc.5",
+    "react-slick": "^0.15.4",
+    "react-twitter-widgets": "^1.4.0",
+    "reactstrap": "^4.8.0",
+    "redux": "^3.7.2",
+    "redux-promise": "^0.5.3"
+  },
+  "devDependencies": {
+    "colors.css": "^3.0.0",
+    "react-scripts": "^1.0.10"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
