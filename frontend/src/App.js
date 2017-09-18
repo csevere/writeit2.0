@@ -4,8 +4,9 @@ import Register from './containers/Register';
 import Login from './containers/Login';
 import Loading from './components/Loading';
 
-import Home from './components/Home'; 
 import NavBar from './components/NavBar';
+
+import Home from './components/Home'; 
 import Footer from './components/Footer'; 
 
 import UserProfile from './components/UserProfile';
@@ -77,13 +78,14 @@ class App extends Component {
       <div>
         <Router>
           <div className="App">
-            <NavBar/>
-            <div className = "container main">
+            <div>
+              <NavBar/>
               <Route exact path = '/loading' component ={Loading}/>
               <Route exact path='/test' component={NavBarTest} />
              
               <Route exact path="/signup" component= {Register} />
               <Route exact path="/login" component= {Login} />
+              <Route exact path="/" component= {Home} /> 
 
               <Route exact path="/user" component= {UserProfile} />
               <Route exact path = "/profile/:profile" component = {tOtherUser}/>
@@ -118,10 +120,7 @@ class App extends Component {
               <Route exact path = "/contemptopic" component = {tContempTopic}/>
 
               <Route exact path="/character" component= {Character} />
-
-
             </div> 
-
           </div>
         </Router>
       </div> 

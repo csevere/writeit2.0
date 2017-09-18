@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import { Route, Link } from 'react-router-dom';
-import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
-import { Grid, Form, FormGroup} from 'react-bootstrap';
+import { Container, Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
+import { Form, FormGroup} from 'react-bootstrap';
 // import {Autocomplete} from 'react-autocomplete';
 import {connect} from 'react-redux';
 import NavBarTest from '../tester/NavBarTest';
@@ -57,8 +57,8 @@ class NavBar extends Component{
 
 		return(
 			<div>
-				<Navbar color ="light" className="navbar-expand-sm mb-3" light toggleable>
-				  <Grid>
+				<Navbar className="navbar-expand-md fixed-top text-white" light toggleable>
+				  <Container>
 				  		<NavbarToggler right onClick = {this.toggle}/>
 						<NavbarBrand href="index.html">writeIT</NavbarBrand>
 					  	<Collapse isOpen = {this.state.isOpen} navbar>
@@ -72,7 +72,7 @@ class NavBar extends Component{
 							</Form>
 							{rightBar}
 						</Collapse>
-					</Grid>
+					</Container>
 				</Navbar>
 	    	</div>
 

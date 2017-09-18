@@ -3,3 +3,36 @@
   width: 21em !important;
   margin-top: 20px;
 }
+
+/* line 9, ../../compass/sass/_navbar.scss */
+.navbar {
+  background: #0074d9;
+  opacity: 0.9;
+  box-shadow: 2px 2px 5px #0074d9;
+  min-height: 50px;
+}
+/* line 14, ../../compass/sass/_navbar.scss */
+.navbar a {
+  color: #fff !important;
+}
+
+/* line 3, ../../compass/sass/_home.scss */
+.home-page {
+  background: url("/img/home-bg.jpeg");
+  background-size: cover;
+  background-repeat: none;
+  min-height: 900px;
+  margin-top: -9em;
+  z-index: 0;
+}
+@media (max-width: 576px) {
+  /* line 3, ../../compass/sass/_home.scss */
+  .home-page {
+    background-size: 500px 900px;
+  }
+}
+/* line 14, ../../compass/sass/_home.scss */
+.home-page .tagline {
+  margin-top: 12rem;
+  color: #fff;
+}

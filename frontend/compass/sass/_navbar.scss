@@ -3,5 +3,16 @@
 .Select{
     width: 21em !important; 
     margin-top: 20px; 
+    
+}
+
+.navbar{
+    background: $blue;
+    opacity: 0.9; 
+    box-shadow: 2px 2px 5px $blue;
+    min-height: 50px; 
+    a{
+        color: #fff !important; 
+    }
 }
 
