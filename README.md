@@ -35,7 +35,7 @@ A week before the project started, we got together in meetings to brainstorm our
 The home page is the main hub of the site, users are able to learn more about the site via the FAQ's page, go to the dashboard to edit their profile and add friends to engaging with the community on shared topics of interest.
 
 <p align='center'>
-  <img src="public/img/writeIt.png">
+  <img src="public/img/writeIT.png">
 </p>
 
 ### User Login Page
