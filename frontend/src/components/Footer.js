@@ -1,23 +1,21 @@
 import React, {Component} from 'react';
 import { Link } from 'react-router-dom';
-import { Nav, Navbar, NavItemForm, Grid, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col } from 'reactstrap';
 
 
 
 class Footer extends Component{
 	render(){
 		return(
-			<div className = "footer-content">
-
-				<nav className="footer">
-					<div className="container-fluid">
-						<ul>
-					  		<li>About Us</li>
-					  		<li>&#169;2017 writeIT</li>
-					  	</ul> 
-					</div>
-				</nav>
-	    	</div>
+			<footer className = "main-footer bg-white text-right p-4 text-muted">
+				<Container>
+					<Row className="no-gutters">
+						<Col>
+							<p>Copyright &copy; 2017 writeIT</p>
+						</Col>
+					</Row>
+				</Container>
+			</footer>
 
 		)
   	}

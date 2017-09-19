@@ -17,12 +17,27 @@ class Home extends Component{
 						</Row>
 
 						<Row className = "no-gutters">
-							<div className = "d-flex flex-wrap align-items-center col-md-6 m-auto">
-								<div className = "circle"></div>
-								<div className = "circle"></div>
-								<div className = "circle"></div>
-								<div className = "circle"></div>
-								<div className = "circle"></div>
+							<div className = "d-flex flex-wrap align-items-center col-md-12 m-auto menu">
+								<div className = "circle dashboad mr-3">
+									<img src="img/dashboard.png" alt="" className ="img-fluid rounded-circle"/>
+									<div className = "text-white text-center">DASHBOARD</div> 
+								</div>
+
+								<div className = "circle resources mr-3">
+									<img src="img/resources.png" alt="" className = "img-fluid rounded-circle"/>
+									<div className = "text-white text-center">RESOURCES</div> 
+								</div>
+
+								<div className = "circle community mr-3">
+									<img src="img/community.png" alt="" className ="img-fluid rounded-circle"/>
+									<div className = "text-white text-center">COMMUNITY</div> 
+								</div>
+
+								<div className= "circle about mr-3"><img src="img/about.png" alt="" className = "img-fluid rounded-circle"/>
+									<div className = "text-white text-center">ABOUT</div> 
+								</div>
+								<div className = "circle faq mr-3"><img src="img/faq.png" alt="" className = "img-fluid rounded-circle"/>
+									<div className = "text-white text-center">FAQ</div> </div>
 							</div>
 						</Row>
 					</Container> 
@@ -34,49 +49,4 @@ class Home extends Component{
 }
 
 export default Home;
-
-
-		// 	<Grid className = "home">
-		// 	<Row>
-		// 		<div className = "overlay"></div> 
-		// 		<div className = "container">
-		// 			<Col sm = {12} smOffset ={1} className = "subtitle">
-		// 				<div><h3>Writing a novel is now fun and easy for everyone.</h3></div> 
-		// 			</Col>
-		// 		</div> 
-			
-		// 		<div className ="container homeNav">
-		// 			<Row>
-		// 				<ul>
-		// 					<li><Link to ="/"><div className="hex hexagon text-center"><h3>HOME</h3></div></Link></li>
-		// 					<li><Link to ="/user"><div className="hex hex2 text-center"><h3>DASHBOARD</h3></div></Link></li>
-		// 					<li><Link to ="/forums"><div className="hex hex3 text-center"><h3>COMMUNITY</h3></div></Link></li>
-		// 					<li><Link to ="/resources"><div className="hex hex4 text-center"><h3>RESOURCES</h3></div></Link></li>
-		// 					<li><Link to ="/about"><div className="hex hex5 text-center"><h3>ABOUT</h3></div></Link></li>
-		// 					<li><Link to ="/faqs"><div className="hex hex6 text-center"><h3>FAQ</h3></div></Link></li>
-		// 				</ul>
-		// 			</Row>
-		// 		</div>				
-
-		// 	</Row>	
-		// </Grid> 
-			
-
-
-
-		// 	  <!-- HOME PAGE -->
-		// 	  <section id= "home-page" class = "py-5">
-		// 	  <div class="container">
-		// 		  <div class="row no-gutters">
-		// 			  <div class="col-lg-12 text-center name-wrapper">
-		// 				  <h1 id = "myName" class = "display-2 pt-5">Carla Severe</h1>
-		// 				  <h1 id = "myTitle" class = "display-3 pt-3"> Web Developer</h1>
-		// 			  </div>
-		// 			  <canvas id = "intro-canvas" width = "600px" height= "600px"/>
-		// 		  </div>
-		// 		  <div class="row">
-		// 			  <i class="fa fa-angle-double-down text-white m-auto"></i>
-		// 		  </div> 
-		// 	  </div>
-		//   </section>
 

@@ -5,9 +5,10 @@ import Login from './containers/Login';
 import Loading from './components/Loading';
 
 import NavBar from './components/NavBar';
+import Footer from './components/Footer';
 
 import Home from './components/Home'; 
-import Footer from './components/Footer'; 
+
 
 import UserProfile from './components/UserProfile';
 import tOtherUser from './tester/tOtherUser';
@@ -120,6 +121,7 @@ class App extends Component {
               <Route exact path = "/contemptopic" component = {tContempTopic}/>
 
               <Route exact path="/character" component= {Character} />
+              <Footer/>
             </div> 
           </div>
         </Router>

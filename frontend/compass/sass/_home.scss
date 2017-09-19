@@ -1,19 +1,44 @@
 @import 'variables'; 
+$menu-item: 7em; 
 
 .home-page{
     background: url('/img/home-bg.jpeg');
     background-size: cover; 
+    background-position: center; 
     background-repeat: none; 
-    @media (max-width:576px){
+    height:100%;
+    @media (max-width:500px){
         background-size: 500px 900px;    
     }
     min-height: 900px; 
     margin-top: -9em; 
-    z-index: 0; 
+    z-index: 0;
+    font-family: 'Karla', sans-serif;  
 
     .tagline{
         margin-top: 12rem;
         color: #fff;  
     }
+
+    .menu{
+        margin-top: 10em !important;
+        &:hover{
+            color: $blue;
+            text-shadow:  2px 2px 8px $blue;
+        }  
+        .circle{
+            img{
+                height: $menu-item !important; 
+               
+            }
+        }
+        .circle{
+            img{
+                height: $menu-item !important; 
+            }
+        }
+
+    }
+     
 }
 

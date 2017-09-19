@@ -9,30 +9,61 @@
   background: #0074d9;
   opacity: 0.9;
   box-shadow: 2px 2px 5px #0074d9;
-  min-height: 50px;
+  height: 50px;
 }
-/* line 14, ../../compass/sass/_navbar.scss */
+@media (max-width: 1024px) {
+  /* line 9, ../../compass/sass/_navbar.scss */
+  .navbar {
+    height: auto;
+  }
+}
+/* line 18, ../../compass/sass/_navbar.scss */
 .navbar a {
   color: #fff !important;
+  font-family: 'Hind', sans-serif;
+}
+/* line 23, ../../compass/sass/_navbar.scss */
+.navbar .navbar-brand {
+  font-size: 2.25rem !important;
 }
 
-/* line 3, ../../compass/sass/_home.scss */
+/* line 4, ../../compass/sass/_home.scss */
 .home-page {
   background: url("/img/home-bg.jpeg");
   background-size: cover;
+  background-position: center;
   background-repeat: none;
+  height: 100%;
   min-height: 900px;
   margin-top: -9em;
   z-index: 0;
+  font-family: 'Karla', sans-serif;
 }
-@media (max-width: 576px) {
-  /* line 3, ../../compass/sass/_home.scss */
+@media (max-width: 500px) {
+  /* line 4, ../../compass/sass/_home.scss */
   .home-page {
     background-size: 500px 900px;
   }
 }
-/* line 14, ../../compass/sass/_home.scss */
+/* line 18, ../../compass/sass/_home.scss */
 .home-page .tagline {
   margin-top: 12rem;
   color: #fff;
+}
+/* line 23, ../../compass/sass/_home.scss */
+.home-page .menu {
+  margin-top: 10em !important;
+}
+/* line 25, ../../compass/sass/_home.scss */
+.home-page .menu:hover {
+  color: #0074d9;
+  text-shadow: 2px 2px 8px #0074d9;
+}
+/* line 30, ../../compass/sass/_home.scss */
+.home-page .menu .circle img {
+  height: 7em !important;
+}
+/* line 36, ../../compass/sass/_home.scss */
+.home-page .menu .circle img {
+  height: 7em !important;
 }

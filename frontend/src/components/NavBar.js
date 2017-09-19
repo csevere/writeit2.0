@@ -57,7 +57,7 @@ class NavBar extends Component{
 
 		return(
 			<div>
-				<Navbar className="navbar-expand-md fixed-top text-white" light toggleable>
+				<Navbar className="navbar-expand-md fixed-top text-white py-2 mb-5" light toggleable>
 				  <Container>
 				  		<NavbarToggler right onClick = {this.toggle}/>
 						<NavbarBrand href="index.html">writeIT</NavbarBrand>
