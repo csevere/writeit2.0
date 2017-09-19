@@ -32,7 +32,7 @@ A week before the project started, we got together in meetings to brainstorm our
 ## Site Walkthrough
 
  ### Home Page
-The home page is the main hub of the site, users are able to learn more about the site via the FAQ's page, go to the dashboard to edit their profile and add friends to engaging with the community on shared topics of interest.
+The home page is the main hub of the site. Users are able to learn more about the writeIT via the FAQ's page, go to the dashboard to edit their profile, add friends, and engage with the community on shared writing topics of interest.
 
 <p align='center'>
   <img src="public/writeIT.png">
