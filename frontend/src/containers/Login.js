@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import { Link} from 'react-router-dom';
-import { Form, FormGroup, ControlLabel, FormControl, Button, Col ,MenuItem, Grid} from 'react-bootstrap'
+import { Button, Modal, ModalHeader, ModalBody, ModalFooter, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
+import { ControlLabel} from 'react-bootstrap'
 // Our action needs bindActionCreators from redux
 import  {bindActionCreators} from 'redux';
 // Get the registerAction function which runs on submission
@@ -81,40 +82,26 @@ class Login extends Component{
 
 		return(
 			<div>
-				<Grid className = "register-wrapper">
-					<Col md = {6} mdOffset={3} className = "login">
-						<div className = "text-center"><h2>Log in to writeIT</h2><br/>
-							<h3>Write, organize, and interact with other writers on writeIT.</h3>
-						</div> 
-						<h4 className="text-danger">{this.state.registerMessage}</h4>
-						<Form horizontal onSubmit={this.handleLogin}>
-							<FormGroup controlId="formHorizontalName" validationState={this.state.nameError}>
-								<Col componentClass={ControlLabel} sm={2}>
-									Email
-								</Col>
-								<Col sm={10}>
-									<FormControl type="email" name="email" placeholder="Email" />
-								</Col>
-							</FormGroup>
-							<FormGroup controlId="formHorizontalName" validationState={this.state.emailError}>
-								<Col componentClass={ControlLabel} sm={2}>
-									Password
-								</Col>
-								<Col sm={10}>
-									<FormControl type="password" name="password" placeholder="Password" />
-								</Col>
-							</FormGroup>
+				<ModalBody>
+					<h4 className="text-danger">{this.state.registerMessage}</h4>
+					<Form horizontal onSubmit={this.handleLogin}>
+						<FormGroup controlId="formHorizontalName" validationState={this.state.nameError}>
+							<Label componentClass={ControlLabel} for="Email">Email</Label>
+							<Input type="email" name="email" placeholder="Email" />
+						</FormGroup>
+
+						<FormGroup controlId="formHorizontalName" validationState={this.state.emailError} >
+							<Label componentClass={ControlLabel}  for="Password">Password</Label>
+							<Input type="password" name="password" placeholder="Password" />
+						</FormGroup>
+						<ModalFooter>
 							<FormGroup>
-								<Col smOffset={2} sm={10}>
-									<Button bsStyle="primary" bsSize="small" type="submit">
-										Login
-									</Button>
-								</Col>
+								<Button color = "primary" bsStyle="primary" bsSize="small" type="submit">
+								Login</Button>
 							</FormGroup>
-						</Form>
-						<div><h4 className = "text-center">Don&#39;t have an account? <Link to = "/signup">Create one!</Link></h4></div>
-					</Col>
-				</Grid>
+						</ModalFooter>
+					</Form>
+				</ModalBody>
 			</div>
 		)
 	}

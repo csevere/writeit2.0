@@ -1,25 +1,29 @@
 import React, {Component} from 'react';
 import { Route, Link } from 'react-router-dom';
-import { Container, Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
+import { Container, Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink, Button, Modal, ModalHeader, ModalBody, ModalFooter} from 'reactstrap';
 import { Form, FormGroup} from 'react-bootstrap';
 // import {Autocomplete} from 'react-autocomplete';
 import {connect} from 'react-redux';
 import NavBarTest from '../tester/NavBarTest';
+import Login from '../containers/Login'; 
 import $ from 'jquery'; 
 
 class NavBar extends Component{
 	constructor(props) {
 		super(props);
-	
-		this.toggle = this.toggle.bind(this);
 		this.state = {
-		  isOpen: false
+		  isOpen: false,
+		  modal: false
 		};
+
+		this.toggle = this.toggle.bind(this);
+		this.toggle = this.toggle.bind(this); 
 	  }
 
 	  toggle() {
 		this.setState({
-		  isOpen: !this.state.isOpen
+		  isOpen: !this.state.isOpen,
+		  modal: !this.state.modal
 		});
 	  }
 
@@ -28,27 +32,27 @@ class NavBar extends Component{
 		if(this.props.registerInfo.name == undefined){
 			var rightBar = [
 				<Nav className="ml-auto" navbar>
-					<NavItem>
-						<NavLink className = "home" href="/">Home</NavLink>
+					<NavItem className = "navI">
+						<NavLink href="/">Home</NavLink>
 					</NavItem>
 					<NavItem>
-					   <NavLink className = "login" href="/login">Login</NavLink>
+					   <NavLink><Button className = "login" color = "light" onClick = {this.toggle}>Login</Button></NavLink>
 					</NavItem>
-					<NavItem className = "nav-item">
-					  <NavLink className = "signup" href="/signup">Sign up</NavLink>
+					<NavItem>
+					  <NavLink href="/signup">Sign up</NavLink>
 					</NavItem>	
 		      	</Nav>
 			]
 		}else{
 			var rightBar = [
 				<Nav className="ml-auto" navbar>
-					<NavItem className="home-nav2">Welcome,
+					<NavItem className="navI">Welcome,
 						<NavLink href='/user'>{this.props.registerInfo.name}</NavLink>
 					</NavItem>
-					<NavItem className = "nav-item">
+					<NavItem className = "navI">
 						<NavLink className = "home-nav" href="/">Home</NavLink>
 					</NavItem>
-					<NavItem className = "logout">
+					<NavItem className = "navI">
 					   <NavLink  href="/">Logout</NavLink>
 					</NavItem>
 		      	</Nav>
@@ -60,7 +64,7 @@ class NavBar extends Component{
 				<Navbar className="navbar-expand-md fixed-top text-white py-2 mb-5" light toggleable>
 				  <Container>
 				  		<NavbarToggler right onClick = {this.toggle}/>
-						<NavbarBrand href="index.html">writeIT</NavbarBrand>
+						<NavbarBrand href="/">writeIT</NavbarBrand>
 					  	<Collapse isOpen = {this.state.isOpen} navbar>
 							<Form className="form-inline text-center ml-auto">
 								<FormGroup>
@@ -74,6 +78,10 @@ class NavBar extends Component{
 						</Collapse>
 					</Container>
 				</Navbar>
+				<Modal isOpen={this.state.modal} toggle = {this.toggle} className = {this.props.Login}>
+					<ModalHeader className = "text-center" toggle = {this.toggle}>Login to writeIT</ModalHeader>
+					<Login/> 
+				</Modal>
 	    	</div>
 
 		)
@@ -89,18 +97,3 @@ function mapStateToProps(state){
 
 // export default NavBar; 
 export default connect(mapStateToProps)(NavBar)
-
-
-
-// 	if(this.props.registerInfo.name == undefined){
-// 			var rightBar = [
-// 				<li key="1" className="text-right"><Link to="/login">Login</Link></li>,
-// 				<li key="2" className="text-right"><Link to="/signup">Sign up</Link></li>,
-						
-// 			]
-// 		}else{
-// 			var rightBar = [
-// 				<li key="1" className="text-right">Hi, {this.props.registerInfo.name}</li>,	
-// 				<li key="2" className="text-right"><Link to="/logout">Logout</Link></li>	
-// 			]		
-// 		}

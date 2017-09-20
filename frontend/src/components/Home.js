@@ -19,25 +19,28 @@ class Home extends Component{
 						<Row className = "no-gutters">
 							<div className = "d-flex flex-wrap align-items-center col-md-12 m-auto menu">
 								<div className = "circle dashboad mr-3">
-									<img src="img/dashboard.png" alt="" className ="img-fluid rounded-circle"/>
-									<div className = "text-white text-center">DASHBOARD</div> 
+									<Link to ="/user"><img src="img/dashboard.png" alt="" className ="img-fluid rounded-circle"/>
+									<div className = "text-center">DASHBOARD</div></Link> 
 								</div>
 
 								<div className = "circle resources mr-3">
-									<img src="img/resources.png" alt="" className = "img-fluid rounded-circle"/>
-									<div className = "text-white text-center">RESOURCES</div> 
+									<Link to = "/resources"><img src="img/resources.png" alt="" className = "img-fluid rounded-circle"/>
+									<div className = "text-center">RESOURCES</div></Link> 
 								</div>
 
 								<div className = "circle community mr-3">
-									<img src="img/community.png" alt="" className ="img-fluid rounded-circle"/>
-									<div className = "text-white text-center">COMMUNITY</div> 
+									<Link to = "/forums"><img src="img/community.png" alt="" className ="img-fluid rounded-circle"/>
+									<div className = "text-center">COMMUNITY</div></Link> 
 								</div>
 
-								<div className= "circle about mr-3"><img src="img/about.png" alt="" className = "img-fluid rounded-circle"/>
-									<div className = "text-white text-center">ABOUT</div> 
+								<div className= "circle about mr-3">
+									<Link to = "/about"><img src="img/about.png" alt="" className = "img-fluid rounded-circle"/>
+									<div className = "text-center">ABOUT</div></Link> 
 								</div>
-								<div className = "circle faq mr-3"><img src="img/faq.png" alt="" className = "img-fluid rounded-circle"/>
-									<div className = "text-white text-center">FAQ</div> </div>
+								<div className = "circle faq mr-3">
+									<Link to = "/faqs"><img src="img/faq.png" alt="" className = "img-fluid rounded-circle"/>
+									<div className = "text-center">FAQ</div></Link> 
+								</div>
 							</div>
 						</Row>
 					</Container> 

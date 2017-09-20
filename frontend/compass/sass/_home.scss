@@ -22,10 +22,16 @@ $menu-item: 7em;
 
     .menu{
         margin-top: 10em !important;
-        &:hover{
-            color: $blue;
-            text-shadow:  2px 2px 8px $blue;
-        }  
+        a{
+            color: #fff; 
+            font-size: 19px; 
+            &:hover{
+                color: $blue !important;
+                text-shadow:  2px 2px 8px $blue !important; 
+                text-decoration: none; 
+            } 
+        }
+        
         .circle{
             img{
                 height: $menu-item !important;  
