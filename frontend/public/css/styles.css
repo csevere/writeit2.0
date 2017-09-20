@@ -32,6 +32,12 @@
   font-size: 2.25rem !important;
 }
 
+/* line 41, ../../compass/sass/_navbar.scss */
+.modal .modal-header h2 {
+  margin-left: 3em !important;
+  font-family: 'Karla', sans-serif;
+}
+
 /* line 4, ../../compass/sass/_home.scss */
 .home-page {
   background: url("/img/home-bg.jpeg");

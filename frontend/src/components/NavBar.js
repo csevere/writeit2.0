@@ -6,6 +6,7 @@ import { Form, FormGroup} from 'react-bootstrap';
 import {connect} from 'react-redux';
 import NavBarTest from '../tester/NavBarTest';
 import Login from '../containers/Login'; 
+import Register from '../containers/Register'; 
 import $ from 'jquery'; 
 
 class NavBar extends Component{
@@ -13,17 +14,26 @@ class NavBar extends Component{
 		super(props);
 		this.state = {
 		  isOpen: false,
-		  modal: false
+		  modal1: false,
+		  modal2: false
 		};
 
 		this.toggle = this.toggle.bind(this);
-		this.toggle = this.toggle.bind(this); 
-	  }
+		this.toggle2 = this.toggle2.bind(this); 
+	}
 
-	  toggle() {
+	toggle() {
 		this.setState({
 		  isOpen: !this.state.isOpen,
-		  modal: !this.state.modal
+		  modal1: !this.state.modal1,
+
+		});
+	}
+
+	toggle2() {
+		this.setState({
+			modal2: !this.state.modal2,
+
 		});
 	  }
 
@@ -36,10 +46,10 @@ class NavBar extends Component{
 						<NavLink href="/">Home</NavLink>
 					</NavItem>
 					<NavItem>
-					   <NavLink><Button className = "login" color = "light" onClick = {this.toggle}>Login</Button></NavLink>
+					   <NavLink><Button color = "light" onClick = {this.toggle} data-target=".Login">Login</Button></NavLink>
 					</NavItem>
 					<NavItem>
-					  <NavLink href="/signup">Sign up</NavLink>
+					  <NavLink><Button color = "light" onClick = {this.toggle2} data-target=".Signup">Sign up</Button></NavLink>
 					</NavItem>	
 		      	</Nav>
 			]
@@ -78,9 +88,19 @@ class NavBar extends Component{
 						</Collapse>
 					</Container>
 				</Navbar>
-				<Modal isOpen={this.state.modal} toggle = {this.toggle} className = {this.props.Login}>
-					<ModalHeader className = "text-center" toggle = {this.toggle}>Login to writeIT</ModalHeader>
+
+				<Modal isOpen={this.state.modal1} toggle = {this.toggle} className = "Login">
+					<ModalHeader toggle = {this.toggle}>
+						<h2 className = "text-center">Sign in to writeIT</h2>
+					</ModalHeader>
 					<Login/> 
+				</Modal>
+
+				<Modal isOpen={this.state.modal2} toggle = {this.toggle2} className = "Signup">
+					<ModalHeader toggle = {this.toggle2}>
+						<h2 className = "text-center">Sign up for writeIT</h2>
+					</ModalHeader>
+					<Register/> 
 				</Modal>
 	    	</div>
 

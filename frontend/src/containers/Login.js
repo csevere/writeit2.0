@@ -94,12 +94,16 @@ class Login extends Component{
 							<Label componentClass={ControlLabel}  for="Password">Password</Label>
 							<Input type="password" name="password" placeholder="Password" />
 						</FormGroup>
+						
+						<FormGroup>
+							<Button color = "primary" size="lg" type="submit" block>
+							Login</Button>
+						</FormGroup>
+
 						<ModalFooter>
-							<FormGroup>
-								<Button color = "primary" bsStyle="primary" bsSize="small" type="submit">
-								Login</Button>
-							</FormGroup>
+							<p className = "text-muted">Write, organize, and interact with other writers on writeIT.</p>
 						</ModalFooter>
+					
 					</Form>
 				</ModalBody>
 			</div>

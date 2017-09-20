@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import { Link} from 'react-router-dom';
-import { Form, FormGroup, ControlLabel, FormControl, Button, Col ,MenuItem, Grid} from 'react-bootstrap'
+import {ControlLabel} from 'react-bootstrap';
+import { Button, Modal, ModalHeader, ModalBody, ModalFooter, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
 // Our action needs bindActionCreators from redux
 import  {bindActionCreators} from 'redux';
 // Get the registerAction function which runs on submission
@@ -92,109 +93,65 @@ class Register extends Component{
 
 		return(
 			<div>
-				<Grid className = "register-wrapperb">
-					<Col md = {5} mdOffset = {3} className = "register">
-						<div className = "text-center"><h2>Sign up for writeIT</h2><br/>
-							<h3>Write, organize, and interact with other writers on writeIT.</h3>
-						</div>
-						<h4>{this.state.registerMessage}</h4>
-							<Col md = {12}>
+				<ModalBody>
+					<h4 className="text-danger">{this.state.registerMessage}</h4>
+					<Form horizontal onSubmit={this.handleRegistration}>
+						<FormGroup controlId="formHorizontalName" validationState={this.state.nameError}>
+							<Label componentClass={ControlLabel} for="Name">Name</Label>
+							<Input type="text" name="name" placeholder="Name" />
+						</FormGroup>
 
-								<Form horizontal onSubmit={this.handleRegistration}>
-									<FormGroup controlId="formHorizontalName" validationState={this.state.nameError}>
-										<Col componentClass={ControlLabel} sm={2}>
-											Name
-										</Col>
-										<Col sm={6}>
-											<FormControl type="text" name="Name" placeholder="Name" />
-										</Col>
-									</FormGroup>
+						<FormGroup controlId="formHorizontalName" validationState={this.state.emailError}>
+							<Label componentClass={ControlLabel} for="Name">Email</Label>
+							<Input type="email" name="email" placeholder="Email" />
+						</FormGroup>
 
+						<FormGroup controlId="formHorizontalName">
+							<Label componentClass={ControlLabel} for="Name">Username</Label>
+							<Input type="text" name="username" placeholder="Username" />
+						</FormGroup>
 
-									<FormGroup controlId="formHorizontalName" validationState={this.state.emailError}>
-										<Col componentClass={ControlLabel} sm={2}>
-											Email
-										</Col>
-										<Col sm={6}>
-											<FormControl type="email" name="email" placeholder="Email" />
-										</Col>
-									</FormGroup>
+						<FormGroup controlId="formHorizontalName">
+							<Label componentClass={ControlLabel} for="Name">Password</Label>
+							<Input type="password" name="password" placeholder="Password" />
+						</FormGroup>
 
 
-									<FormGroup controlId="formHorizontalName">
-										<Col componentClass={ControlLabel} sm={2}>
-											Username
-										</Col>
-										<Col sm={6}>
-											<FormControl type="text" name="username" placeholder="Username"/>
-										</Col>
-									</FormGroup>
+						<FormGroup controlId="formHorizontalName">
+							<Label componentClass={ControlLabel} for="Twitter">Twitter Handle</Label>
+							<Input type="text" name="t_username" placeholder="twitter" />
+						</FormGroup>
 
 
-									<FormGroup controlId="formHorizontalName">
-										<Col componentClass={ControlLabel} sm={2}>
-											Twitter Handle 
-										</Col>
-										<Col sm={6}>
-											<FormControl type="text" name="t_username" placeholder="don't include @"/>
-										</Col>
-									</FormGroup>
+						<FormGroup controlId="formHorizontalName">
+							<Label componentClass={ControlLabel} for="Occupation">Occupation</Label>
+							<Input type="text" name="occupation" placeholder="Occupation" />
+						</FormGroup>
 
 
-									<FormGroup controlId="formHorizontalName">
-										<Col componentClass={ControlLabel} sm={2}>
-											Password
-										</Col>
-										<Col sm={6}>
-											<FormControl type="password" name="password" placeholder="Password" />
-										</Col>
-									</FormGroup>
+						<FormGroup controlId="formHorizontalName">
+							<Label componentClass={ControlLabel} for="About">About</Label>
+							<Input type="text" name="state" placeholder="About" />
+						</FormGroup>
 
 
-									<FormGroup controlId="formHorizontalName">
-										<Col componentClass={ControlLabel} sm={2}>
-											Occupation
-										</Col>
-										<Col sm={6}>
-											<FormControl type="text" name="occupation" placeholder="Occupation" />
-										</Col>
-									</FormGroup>
+						<FormGroup controlId="formHorizontalName">
+							<Label componentClass={ControlLabel} for="Location">Location</Label>
+							<Input type="text" name="location" placeholder="Location" />
+						</FormGroup>
 
+						<FormGroup>
+							<Button color = "primary" size="lg" type="submit" block>
+							Register</Button>
+						</FormGroup>
 
-									<FormGroup controlId="formHorizontalName">
-										<Col componentClass={ControlLabel} sm={2}>
-											About
-										</Col>
-										<Col sm={6}>
-											<FormControl type="text" name="state" placeholder="About" />
-										</Col>
-									</FormGroup>
+						<ModalFooter>
+							<p className = "text-muted">Write, organize, and interact with other writers on writeIT.</p>
+						</ModalFooter>
+					
+					</Form>
+				</ModalBody>
 
-
-									<FormGroup controlId="formHorizontalName">
-										<Col componentClass={ControlLabel} sm={2}>
-											Location
-										</Col>
-										<Col sm={6}>
-											<FormControl type="text" name="state" placeholder="Location" />
-										</Col>
-									</FormGroup>
-
-
-									<FormGroup>
-										<Col smOffset={2} sm={6}>
-											<Button className="button" bsStyle="primary" bsSize="small" type="submit">
-												Register
-											</Button>
-										</Col>
-									</FormGroup>
-									
-								</Form>
-								<div><h4 className = "text-center">Already have an account? <Link to = "/login">Log in!</Link></h4></div>
-							</Col>
-						
-					</Col> 
-				</Grid> 
 			</div>
 		)
 	}
