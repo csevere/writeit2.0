@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import { Link} from 'react-router-dom';
 import {ControlLabel} from 'react-bootstrap';
-import { Button, Modal, ModalHeader, ModalBody, ModalFooter, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
+import { Button, Modal, ModalHeader, ModalBody, ModalFooter, Form, FormGroup, Label, Input, FormText, InputGroup, InputGroupAddon } from 'reactstrap';
 // Our action needs bindActionCreators from redux
 import  {bindActionCreators} from 'redux';
 // Get the registerAction function which runs on submission
@@ -118,26 +118,28 @@ class Register extends Component{
 
 
 						<FormGroup controlId="formHorizontalName">
-							<Label componentClass={ControlLabel} for="Twitter">Twitter Handle</Label>
-							<Input type="text" name="t_username" placeholder="twitter" />
+							<Label componentClass={ControlLabel} for="Twitter">Twitter</Label>
+							<InputGroup>
+								<InputGroupAddon>@</InputGroupAddon>
+								<Input type = "text" name = "t_username" placeholder="MyTwitterUsername" />
+						  </InputGroup>
 						</FormGroup>
 
 
 						<FormGroup controlId="formHorizontalName">
 							<Label componentClass={ControlLabel} for="Occupation">Occupation</Label>
-							<Input type="text" name="occupation" placeholder="Occupation" />
+							<Input type="text" name="occupation" placeholder="professional skydiver" />
 						</FormGroup>
 
 
 						<FormGroup controlId="formHorizontalName">
 							<Label componentClass={ControlLabel} for="About">About</Label>
-							<Input type="text" name="state" placeholder="About" />
+							<Input type="textarea" name="state" placeholder="Hobbies, interests, music, movies, etc..."/>
 						</FormGroup>
-
 
 						<FormGroup controlId="formHorizontalName">
 							<Label componentClass={ControlLabel} for="Location">Location</Label>
-							<Input type="text" name="location" placeholder="Location" />
+							<Input type="text" name="location" placeholder="Paris, France" />
 						</FormGroup>
 
 						<FormGroup>

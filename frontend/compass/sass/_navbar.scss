@@ -15,15 +15,6 @@
         height: auto;     
     }
 
-    .navI{
-        a{
-            &:hover{
-                background-color: #fff;
-                color: $blue !important; 
-            } 
-        }
-    }
-
     a{
         color: #fff !important;
         font-family: 'Hind', sans-serif; 

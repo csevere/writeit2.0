@@ -42,14 +42,11 @@ class NavBar extends Component{
 		if(this.props.registerInfo.name == undefined){
 			var rightBar = [
 				<Nav className="ml-auto" navbar>
-					<NavItem className = "navI">
-						<NavLink href="/">Home</NavLink>
+					<NavItem>
+					   <NavLink><Button color = "light" onClick = {this.toggle} >Login</Button></NavLink>
 					</NavItem>
 					<NavItem>
-					   <NavLink><Button color = "light" onClick = {this.toggle} data-target=".Login">Login</Button></NavLink>
-					</NavItem>
-					<NavItem>
-					  <NavLink><Button color = "light" onClick = {this.toggle2} data-target=".Signup">Sign up</Button></NavLink>
+					  <NavLink><Button color = "light" onClick = {this.toggle2} >Sign Up</Button></NavLink>
 					</NavItem>	
 		      	</Nav>
 			]
@@ -58,9 +55,6 @@ class NavBar extends Component{
 				<Nav className="ml-auto" navbar>
 					<NavItem className="navI">Welcome,
 						<NavLink href='/user'>{this.props.registerInfo.name}</NavLink>
-					</NavItem>
-					<NavItem className = "navI">
-						<NavLink className = "home-nav" href="/">Home</NavLink>
 					</NavItem>
 					<NavItem className = "navI">
 					   <NavLink  href="/">Logout</NavLink>

@@ -17,22 +17,17 @@
     height: auto;
   }
 }
-/* line 20, ../../compass/sass/_navbar.scss */
-.navbar .navI a:hover {
-  background-color: #fff;
-  color: #0074d9 !important;
-}
-/* line 27, ../../compass/sass/_navbar.scss */
+/* line 18, ../../compass/sass/_navbar.scss */
 .navbar a {
   color: #fff !important;
   font-family: 'Hind', sans-serif;
 }
-/* line 32, ../../compass/sass/_navbar.scss */
+/* line 23, ../../compass/sass/_navbar.scss */
 .navbar .navbar-brand {
   font-size: 2.25rem !important;
 }
 
-/* line 41, ../../compass/sass/_navbar.scss */
+/* line 32, ../../compass/sass/_navbar.scss */
 .modal .modal-header h2 {
   margin-left: 3em !important;
   font-family: 'Karla', sans-serif;
