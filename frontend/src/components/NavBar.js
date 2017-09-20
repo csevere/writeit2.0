@@ -89,14 +89,14 @@ class NavBar extends Component{
 
 				<Modal isOpen={this.state.modal1} toggle = {this.toggle1} className = "Login">
 					<ModalHeader className = "text-center" toggle = {this.toggle1}>
-						<h2>Sign in to writeIT</h2>
+						<h2 className = "text-center">Sign in to writeIT</h2>
 					</ModalHeader>
 					<Login/> 
 				</Modal>
 
 				<Modal isOpen={this.state.modal2} toggle = {this.toggle2} className = "Signup">
 					<ModalHeader className = "text-center" toggle = {this.toggle2}>
-						<h2>Sign up for writeIT</h2>
+						<h2 className = "text-center">Sign up for writeIT</h2>
 					</ModalHeader>
 					<Register/> 
 				</Modal>

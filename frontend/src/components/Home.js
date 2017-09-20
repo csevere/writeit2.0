@@ -11,8 +11,8 @@ class Home extends Component{
 				<div className = "home-page py-5">
 					<Container>
 						<Row className = "no-gutters">
-							<Col md= "12">
-								<h3 className = "tagline py-5">Writing a novel is now fun for everyone.</h3>
+							<Col sm = "12">
+								<h3 className = "tagline py-5">Writing a novel is now fun and easy for everyone!</h3>
 							</Col>
 						</Row>
 

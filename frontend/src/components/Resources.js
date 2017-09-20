@@ -8,7 +8,7 @@ class Resources extends Component{
 	render(){
 		return(
 			<div>
-				<div className = "resources-page py-5 text-white">
+				<div className = "resources-page py-3 text-white">
 					<div className ="overlay"></div>
 					<Container className = "res-wrapper mt-5 pt-5">
 						<Row className = "no gutters">

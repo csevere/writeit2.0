@@ -144,7 +144,7 @@ class Register extends Component{
 
 						<FormGroup>
 							<Button color = "primary" size="lg" type="submit" block>
-							Register</Button>
+							Join writeIT!</Button>
 						</FormGroup>
 
 						<ModalFooter>
