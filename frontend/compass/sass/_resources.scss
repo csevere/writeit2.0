@@ -1,0 +1,48 @@
+@import 'variables';
+
+.resources-page{
+    position: relative; 
+    background: url('/img/books_res.jpeg');
+    background-position: center; 
+    height:100%;
+    font-family: 'Karla', sans-serif;
+    z-index: 1; 
+
+    .res-wrapper{
+        margin-top: 5em; 
+    } 
+    .overlay{
+        background: $yellow; 
+        position: absolute; 
+        width: 100%;
+        height: 100%; 
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        z-index: 0;
+        background-color: #000;
+        opacity: 0.6; 
+    }
+
+    .res-icon{
+        img{
+            height: $menu-item !important;
+        }
+    }
+        
+
+    table{
+        .header{
+            font-size: $big; 
+            background-color: $res-color;
+        }
+
+        td{
+            font-size: $med; 
+        }
+    }
+
+    .tagline{
+        font-size: $sml;  
+    }
+}

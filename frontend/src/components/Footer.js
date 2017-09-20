@@ -7,7 +7,7 @@ import { Container, Row, Col } from 'reactstrap';
 class Footer extends Component{
 	render(){
 		return(
-			<footer className = "main-footer bg-white text-right p-4 text-muted">
+			<footer className = "main-footer bg-white text-right pt-3 text-muted">
 				<Container>
 					<Row className="no-gutters">
 						<Col>

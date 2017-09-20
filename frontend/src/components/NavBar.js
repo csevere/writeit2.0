@@ -19,21 +19,25 @@ class NavBar extends Component{
 		};
 
 		this.toggle = this.toggle.bind(this);
+		this.toggle1 = this.toggle1.bind(this);
 		this.toggle2 = this.toggle2.bind(this); 
 	}
 
 	toggle() {
 		this.setState({
 		  isOpen: !this.state.isOpen,
-		  modal1: !this.state.modal1,
+		});
+	}
 
+	toggle1() {
+		this.setState({
+		  modal1: !this.state.modal1,
 		});
 	}
 
 	toggle2() {
 		this.setState({
 			modal2: !this.state.modal2,
-
 		});
 	  }
 
@@ -43,7 +47,7 @@ class NavBar extends Component{
 			var rightBar = [
 				<Nav className="ml-auto" navbar>
 					<NavItem>
-					   <NavLink><Button color = "light" onClick = {this.toggle} >Login</Button></NavLink>
+					   <NavLink><Button color = "light" onClick = {this.toggle1} >Login</Button></NavLink>
 					</NavItem>
 					<NavItem>
 					  <NavLink><Button color = "light" onClick = {this.toggle2} >Sign Up</Button></NavLink>
@@ -83,16 +87,16 @@ class NavBar extends Component{
 					</Container>
 				</Navbar>
 
-				<Modal isOpen={this.state.modal1} toggle = {this.toggle} className = "Login">
-					<ModalHeader toggle = {this.toggle}>
-						<h2 className = "text-center">Sign in to writeIT</h2>
+				<Modal isOpen={this.state.modal1} toggle = {this.toggle1} className = "Login">
+					<ModalHeader className = "text-center" toggle = {this.toggle1}>
+						<h2>Sign in to writeIT</h2>
 					</ModalHeader>
 					<Login/> 
 				</Modal>
 
 				<Modal isOpen={this.state.modal2} toggle = {this.toggle2} className = "Signup">
-					<ModalHeader toggle = {this.toggle2}>
-						<h2 className = "text-center">Sign up for writeIT</h2>
+					<ModalHeader className = "text-center" toggle = {this.toggle2}>
+						<h2>Sign up for writeIT</h2>
 					</ModalHeader>
 					<Register/> 
 				</Modal>
