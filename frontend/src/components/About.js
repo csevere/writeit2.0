@@ -31,15 +31,13 @@ class About extends Component{
 									<p>
 									Writing a book can be an intimidating and complex endeavor. With writeIT, we give 
 									you simple tools to break the task into easy, manageable parts. You’ll spend
-									more time creating your story rather than stressing out about how you’ll do it.
-									</p>
+									more time creating your story rather than stressing out about how you’ll do it.</p>
 
 									<p>
 									Just think of writeIT as the bridge getting you from only <i>thinking</i> about a book 
 									idea to actually <i>writing</i> it. If you’re already a seasoned writer, you’ll appreciate 
 									how writeIT simplifies your writing dashboard by putting the essential tools in one,
-									easily-accessible place.
-									</p>
+									easily-accessible place.</p>
 								</div>
 							</Col>
 						</Row>	
@@ -53,74 +51,67 @@ class About extends Component{
 							<Col sm="6" className = "mr-auto">
 								<div>
 									<h1><i>Safety</i></h1>
-									<p>We don’t and will never own any of the words you produce on writeIT. It’s all yours. Feel free to delete, edit, or move any parts of your work elsewhere.You can trust your words to stay safe in our system.
-									</p>
+									<p>We don’t and never will own any of the content you produce on writeIT. It’s all yours. Feel free to delete, edit, or move any parts of your work elsewhere.You can trust your words to stay safe in our system. That's our promise to you.</p>
 								</div>
 							</Col>
 						</Row>	
 					</Container> 
 				</div>  
 
-				
+				<div className = "about3">
+					<div className ="overlay-about3"></div>
+					<Container className = "about3-wrapper text-white">
+						<Row className="about-text text-center">
+							<Col sm="6" className = "ml-auto">
+								<div>
+									<h1><i>Organization</i></h1>
+									<p>Some people write best without structure, freely typing words from beginning to end.  
+And that’s totally cool! Others need organization. If you’re in the latter group, you’ll love how writeIT helps keep tabs on essential components such as characters, scenes, or plotting. Have fun being an organization wizard.</p>
+
+<p>If you're new to writing a novel, you’ll find suggestions for crafting plot, creating believable characters, effective scenes, and much more. You'll also get suggestions on critiquing other writers’ work and yours, writing a query letter, along with the dreaded synopsis for literary agents.</p>
+									
+								</div>
+							</Col>
+						</Row>	
+					</Container> 
+				</div> 
+
+				<div className = "about4">
+					<div className ="overlay-about4"></div>
+					<Container className = "about4-wrapper text-white">
+						<Row className="about-text text-center">
+							<Col sm="6" className = "mr-auto">
+								<div>
+									<h1><i>Community</i></h1>
+									<p>Writing a book shouldn’t have to be a solitary journey. Writers <i>need</i> other writers. We understand that at writeIT so we've created a forum for writers of multiple genres to offer ideas, seek or give feedback on written works, share successes and failures, or chat about any topic related to writing.</p>
+								</div>
+							</Col>
+						</Row>	
+					</Container> 
+				</div> 
+
+				<div className = "about5">
+					<div className ="overlay-about5"></div>
+					<Container className = "about5-wrapper text-white">
+						<Row className="about-text text-center">
+							<Col sm="6" className = "m-auto">
+								<div>
+									<h1><i>Fun</i></h1>
+									<p>Writing a story is fun. Yes, <i>fun</i>. The process of creating characters and placing them in new worlds to battle enemies or overcome great challenges should bring excitement to any writer. But sometimes working on a manuscript that once brought joy can become a chore or a slow slog to the finish line.</p>
+		
+<p>Our tools aim to keep that positive energy alive whether you’re writing the dire middle parts, difficult chapters or scenes, or producing a satisfying ending to your book.
+</p>
+
+<p>Join writeIT today!</p>
+								</div>
+							</Col>
+						</Row>	
+					</Container> 
+				</div> 
+
 		    </div>
 		)
 	}
 }
 
 export default About; 
-
-// Col xs={6}>
-// <div>
-// 	<h3>Safety</h3><hr id="safety" />
-
-// 		<p>We don’t and will never own any of the words you produce on writeIT. 
-// 		It’s all yours. Feel free to delete, edit, or move any parts of your work elsewhere.
-// 		You can trust your words to stay safe in our system.
-// 		</p>
-// </div>	
-// </Col>
-
-// <Row className="about-row2">
-// <Col xs={4}>
-// <div className="organization">
-// 	<h3> Organization </h3><hr id='organization' />
-// 	<p>
-// 	Some people write best without structure, freely typing words from beginning to end.  
-// 	And that’s totally cool! Others need organization. If you’re in the latter group, you’ll love writeIT for the way it helps you keep tabs on essential components
-// 	such as characters or the plot. 
-// 	</p>
-
-// 	<p>You’ll also find suggestions for critiquing other writers’ work and yours, along with writing a query letter an 
-// 	the dreaded synopsis for literary agents.
-// 	</p>
-// </div>
-// </Col>
-// <Col xs={4}>
-// <div>
-// 	<h3>Fun</h3><hr id="fun" /> 
-
-// 		<p>
-// 		Writing a story is fun. Yes, fun. 
-// 		The process of creating characters and placing them in new worlds to battle enemies
-// 		or overcome great challenges should bring excitement to any writer.
-// 		But sometimes working on a manuscript that once brought joy can become a chore or a slow slog to the finish line. 
-// 		</p>
-		
-// 		<p>Our tools aim to keep that positive energy alive whether you’re writing the dire middle parts, difficult chapters or scenes,
-// 		or producing a satisfying ending to your book. 
-// 		</p>
-
-	
-// </div>	
-// </Col>
-// <Col xs={4}>
-// <div>
-// 	<h3>Social</h3><hr id="social" />
-
-// 		<p>Writing a book shouldn’t have to be a solitary endeavor. Writers need other writers. 
-// 		We understand that need so we created a forum for writers of multiple genres to share ideas, 
-// 		seek or give feedback on chapters or scenes, or talk about any topic related to writing. 
-// 		</p>
-// </div>	
-// </Col>
-// </Row>

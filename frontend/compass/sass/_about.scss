@@ -8,12 +8,9 @@
         }
     }
 
-    .about1, .about2{
+    .about1, .about2, .about3, .about4, .about5{
         position: relative; 
         font-family: 'Karla', sans-serif;
-        background-size: cover; 
-        background-position: center; 
-        background-repeat: none; 
         height:100%;
         min-height: 600px;
         
@@ -22,6 +19,9 @@
     .about1{
         background: url('/img/about1.jpg');
         padding: 2rem 0 3rem 0;
+        background-size: cover; 
+        background-position: center; 
+        background-repeat: none; 
         .about1-wrapper{
             margin-top: 5em; 
         }
@@ -36,13 +36,68 @@
     .about2{
         background: url('/img/about2.jpeg');
         padding: 8rem 0 8rem 0; 
+        background-size: cover; 
+        background-position: center; 
+        background-repeat: none; 
+        background-attachment: fixed; 
         
         .about-text{
             margin-top: 15em; 
         }
     }
+
+    .about3{
+        background: url('/img/about3.jpeg');
+        padding: 8rem 0 8rem 0; 
+        background-size: cover; 
+        background-position: center; 
+        background-repeat: none; 
         
-    .overlay-about, .overlay-about2{
+        .about-text{
+            margin-top: 15em; 
+        }
+    }
+
+    .about4{
+        background: url('/img/about4.jpeg');
+        padding: 8rem 0 8rem 0; 
+        background-size: cover; 
+        background-position: center; 
+        background-repeat: none;
+        background-attachment: fixed; 
+
+        .about-text{
+            margin-top: 15em; 
+        }
+    }
+
+    .about4{
+        background: url('/img/about4.jpeg');
+        padding: 8rem 0 8rem 0; 
+        background-size: cover; 
+        background-position: center; 
+        background-repeat: none;
+        background-attachment: fixed; 
+
+        .about-text{
+            margin-top: 15em; 
+        }
+    }
+
+    .about5{
+        background: url('/img/about5.jpg');
+        padding: 8rem 0 8rem 0; 
+        background-size: cover; 
+        background-position: center; 
+        background-repeat: none;
+        background-attachment: fixed; 
+
+        .about-text{
+            margin-top: 15em; 
+        }
+    }
+        
+    .overlay-about, .overlay-about2, .overlay-about3, .overlay-about4, .overlay-about5{
         position: absolute; 
         width: 100%;
         height: 100%; 
@@ -51,11 +106,11 @@
         opacity: 0.7; 
     }
 
-    .overlay-about{
+    .overlay-about, .overlay-about3, .overlay-about5{
         background-color: $dark-gray; 
     }
 
-    .overlay-about2{
+    .overlay-about2, .overlay-about4{
         background-color: $abt-color; 
     }
 

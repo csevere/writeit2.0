@@ -99,7 +99,7 @@
   left: 0px;
   z-index: 0;
   background-color: #000;
-  opacity: 0.6;
+  opacity: 0.7;
 }
 /* line 28, ../../compass/sass/_resources.scss */
 .resources-page .res-icon img {
@@ -121,46 +121,97 @@
 
 /* line 6, ../../compass/sass/_about.scss */
 .about-page .about-text p {
-  font-size: 18px;
+  font-size: 20px;
 }
 /* line 11, ../../compass/sass/_about.scss */
-.about-page .about1 {
+.about-page .about1, .about-page .about2, .about-page .about3, .about-page .about4, .about-page .about5 {
   position: relative;
   font-family: 'Karla', sans-serif;
+  height: 100%;
+  min-height: 600px;
+}
+/* line 19, ../../compass/sass/_about.scss */
+.about-page .about1 {
   background: url("/img/about1.jpg");
+  padding: 2rem 0 3rem 0;
   background-size: cover;
   background-position: center;
   background-repeat: none;
-  height: 100%;
-  min-height: 600px;
-  padding: 2rem 0 3rem 0;
 }
-/* line 21, ../../compass/sass/_about.scss */
+/* line 25, ../../compass/sass/_about.scss */
 .about-page .about1 .about1-wrapper {
   margin-top: 5em;
 }
-/* line 25, ../../compass/sass/_about.scss */
+/* line 29, ../../compass/sass/_about.scss */
 .about-page .about1 .abt-icon img {
   height: 7em !important;
 }
-/* line 32, ../../compass/sass/_about.scss */
+/* line 36, ../../compass/sass/_about.scss */
 .about-page .about2 {
-  position: relative;
-  font-family: 'Karla', sans-serif;
   background: url("/img/about2.jpeg");
+  padding: 8rem 0 8rem 0;
   background-size: cover;
   background-position: center;
   background-repeat: none;
-  height: 100%;
-  min-height: 600px;
-  padding: 8rem 0 8rem 0;
+  background-attachment: fixed;
 }
-/* line 43, ../../compass/sass/_about.scss */
+/* line 44, ../../compass/sass/_about.scss */
 .about-page .about2 .about-text {
   margin-top: 15em;
 }
-/* line 48, ../../compass/sass/_about.scss */
-.about-page .overlay-about, .about-page .overlay-about2 {
+/* line 49, ../../compass/sass/_about.scss */
+.about-page .about3 {
+  background: url("/img/about3.jpeg");
+  padding: 8rem 0 8rem 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: none;
+}
+/* line 56, ../../compass/sass/_about.scss */
+.about-page .about3 .about-text {
+  margin-top: 15em;
+}
+/* line 61, ../../compass/sass/_about.scss */
+.about-page .about4 {
+  background: url("/img/about4.jpeg");
+  padding: 8rem 0 8rem 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: none;
+  background-attachment: fixed;
+}
+/* line 69, ../../compass/sass/_about.scss */
+.about-page .about4 .about-text {
+  margin-top: 15em;
+}
+/* line 74, ../../compass/sass/_about.scss */
+.about-page .about4 {
+  background: url("/img/about4.jpeg");
+  padding: 8rem 0 8rem 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: none;
+  background-attachment: fixed;
+}
+/* line 82, ../../compass/sass/_about.scss */
+.about-page .about4 .about-text {
+  margin-top: 15em;
+}
+/* line 87, ../../compass/sass/_about.scss */
+.about-page .about5 {
+  background: url("/img/about5.jpg");
+  padding: 8rem 0 8rem 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: none;
+  background-attachment: fixed;
+}
+/* line 95, ../../compass/sass/_about.scss */
+.about-page .about5 .about-text {
+  margin-top: 15em;
+}
+/* line 100, ../../compass/sass/_about.scss */
+.about-page .overlay-about, .about-page .overlay-about2, .about-page .overlay-about3, .about-page .overlay-about4, .about-page .overlay-about5 {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -168,11 +219,11 @@
   left: 0px;
   opacity: 0.7;
 }
-/* line 57, ../../compass/sass/_about.scss */
-.about-page .overlay-about {
-  background-color: #AAAAAA;
+/* line 109, ../../compass/sass/_about.scss */
+.about-page .overlay-about, .about-page .overlay-about3, .about-page .overlay-about5 {
+  background-color: #464a4e;
 }
-/* line 61, ../../compass/sass/_about.scss */
-.about-page .overlay-about2 {
+/* line 113, ../../compass/sass/_about.scss */
+.about-page .overlay-about2, .about-page .overlay-about4 {
   background-color: #e04006;
 }
