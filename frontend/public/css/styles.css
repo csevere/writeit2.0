@@ -227,3 +227,28 @@
 .about-page .overlay-about2, .about-page .overlay-about4 {
   background-color: #e04006;
 }
+
+/* line 3, ../../compass/sass/_faqs.scss */
+.faq-page {
+  position: relative;
+  background: #ffe4c4;
+  height: 100%;
+  font-family: 'Karla', sans-serif;
+  padding: 3rem 0 8rem 0;
+}
+/* line 10, ../../compass/sass/_faqs.scss */
+.faq-page .faq-wrapper {
+  margin-top: 2em;
+}
+/* line 15, ../../compass/sass/_faqs.scss */
+.faq-page .faq-icon img {
+  height: 7em !important;
+}
+/* line 20, ../../compass/sass/_faqs.scss */
+.faq-page .card-header {
+  cursor: pointer;
+}
+/* line 25, ../../compass/sass/_faqs.scss */
+.faq-page .card-block p {
+  font-size: 20px;
+}

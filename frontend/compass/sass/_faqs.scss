@@ -1,0 +1,31 @@
+@import 'variables'; 
+
+.faq-page {
+    position: relative; 
+    background: $bisque; 
+    height:100%;
+    font-family: 'Karla', sans-serif;
+    padding: 3rem 0 8rem 0;
+
+    .faq-wrapper{
+        margin-top: 2em; 
+    } 
+
+    .faq-icon{
+        img{
+            height: $menu-item !important;
+        }
+    }
+
+    .card-header{
+        cursor: pointer; 
+    }
+
+    .card-block{
+        p{
+            font-size: $med; 
+        }
+
+    }
+
+}
