@@ -18,8 +18,6 @@ WriteIT is a productivity tool for writers, offering a variety of ways to organi
 [Porscha Johnson]: <https://github.com/Porscha07>
 
 
-[here]:<>
-
 ## Languages and Technologies
 
 JavaScript | JSX | React | Redux | Node.js| Express | MySQL | Sass | AWS | jQuery|
@@ -27,7 +25,7 @@ JavaScript | JSX | React | Redux | Node.js| Express | MySQL | Sass | AWS | jQuer
 
 ## Strategy
 
-A week before the project started, we brainstormed our project's scope and functionality by creating  wireframes, discussing required technologies, and finalizing each member's roles and responsibilities. Two worked on the back end and the other two worked on the front end. However, we mob programmed some aspects of the front and back end to ensure each team member had an understanding of the code used. At the end of each day, we had quick meetings to ensure we were on track and to avoid merge conflicts while pushing and pulling our code on github. 
+A week before the project started, we brainstormed our project's scope and functionality by creating  wireframes, discussing required technologies, and finalizing each member's roles and responsibilities. Two worked on the back end and the other two worked on the front end. However, we mob programmed some aspects of the front and back to ensure each team member had an understanding of the code used. At the end of each day, we had quick meetings to ensure we were on track and to avoid merge conflicts while pushing and pulling our code on github. 
 
 ## Site Walkthrough
 
@@ -39,7 +37,7 @@ The home page is the main hub of the site. Users are able to learn more about wr
 </p>
 
 ### User Login
-Users who have registered and provided information such as their twitter handle,occupation, and location can sign in and start writing and engaging.
+Users who have registered and provided information such as their twitter handle, occupation, and location can sign in and start writing and engaging.
 
 <p align='center'>
   <img src="public/login.png">
