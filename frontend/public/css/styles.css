@@ -27,9 +27,14 @@
   font-size: 2.25rem !important;
 }
 
-/* line 32, ../../compass/sass/_navbar.scss */
+/* line 31, ../../compass/sass/_navbar.scss */
+.modal .modal-header {
+  background: #0074d9;
+}
+/* line 33, ../../compass/sass/_navbar.scss */
 .modal .modal-header h2 {
   font-family: 'Karla', sans-serif;
+  margin-left: 3.5em;
 }
 
 /* line 4, ../../compass/sass/_home.scss */
@@ -251,4 +256,22 @@
 /* line 25, ../../compass/sass/_faqs.scss */
 .faq-page .card-block p {
   font-size: 20px;
+}
+
+/* line 7, ../../compass/sass/styles.scss */
+.btn-primary {
+  color: #fff;
+  background-color: #0074d9 !important;
+  border-color: #0074d9 !important;
+}
+/* line 11, ../../compass/sass/styles.scss */
+.btn-primary:hover {
+  opacity: 0.7;
+}
+
+/* line 17, ../../compass/sass/styles.scss */
+.btn-outline-light:hover {
+  opacity: 0.9;
+  background: #f8f9fa;
+  color: #0074d9;
 }

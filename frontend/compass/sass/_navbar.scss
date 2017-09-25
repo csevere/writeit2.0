@@ -29,8 +29,10 @@
 .modal{
    
     .modal-header{
+        background: $blue; 
         h2{
-            font-family: 'Karla', sans-serif;  
+            font-family: 'Karla', sans-serif;
+            margin-left: 3.5em;   
         }
     }
        

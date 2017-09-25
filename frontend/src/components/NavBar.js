@@ -47,10 +47,10 @@ class NavBar extends Component{
 			var rightBar = [
 				<Nav className="ml-auto" navbar>
 					<NavItem>
-					   <NavLink><Button color = "light" onClick = {this.toggle1} >Login</Button></NavLink>
+					   <NavLink><Button outline color = "light" onClick = {this.toggle1} >Login</Button></NavLink>
 					</NavItem>
 					<NavItem>
-					  <NavLink><Button color = "light" onClick = {this.toggle2} >Sign Up</Button></NavLink>
+					  <NavLink><Button outline color = "light" onClick = {this.toggle2} >Sign Up</Button></NavLink>
 					</NavItem>	
 		      	</Nav>
 			]
@@ -88,14 +88,14 @@ class NavBar extends Component{
 				</Navbar>
 
 				<Modal isOpen={this.state.modal1} toggle = {this.toggle1} className = "Login">
-					<ModalHeader className = "text-center" toggle = {this.toggle1}>
-						<h2 className = "text-center">Sign in to writeIT</h2>
+					<ModalHeader className = "text-center text-white" toggle = {this.toggle1}>
+						<h2>Sign in to writeIT</h2>
 					</ModalHeader>
 					<Login/> 
 				</Modal>
 
 				<Modal isOpen={this.state.modal2} toggle = {this.toggle2} className = "Signup">
-					<ModalHeader className = "text-center" toggle = {this.toggle2}>
+					<ModalHeader className = "text-center text-white" toggle = {this.toggle2}>
 						<h2 className = "text-center">Sign up for writeIT</h2>
 					</ModalHeader>
 					<Register/> 

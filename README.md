@@ -35,14 +35,14 @@ A week before the project started, we got together in meetings to brainstorm our
 The home page is the main hub of the site. Users are able to learn more about the writeIT via the FAQ's page, go to the dashboard to edit their profile, add friends, and engage with the community on shared writing topics of interest.
 
 <p align='center'>
-  <img src="public/writeIT.png">
+  <img src="public/home.png">
 </p>
 
 ### User Login Page
 User login in page after they have registered and provided detailed information such as their twitter handle,occupation and location.
 
 <p align='center'>
-  <img src="public/writeIt-user-login.png">
+  <img src="public/login.png">
  </p>
 
 
@@ -50,7 +50,15 @@ User login in page after they have registered and provided detailed information 
  The resources page provides writers with a top ten list of books to help guide them though various aspects of the writing process. 
 
 <p align='center'>
-  <img src="public/writeIt-resources.png">
+  <img src="public/resources.png">
+</p>
+
+
+ ### About
+ The about page gives visitors an overview of writeIT and what the experience they can expect when deciding to join the site. 
+
+<p align='center'>
+  <img src="public/about.png">
 </p>
 
 ### Write Menu
