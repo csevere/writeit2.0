@@ -27,19 +27,19 @@ JavaScript | JSX | React | Redux | Node.js| Express | MySQL | Sass | AWS | jQuer
 
 ## Strategy
 
-A week before the project started, we got together in meetings to brainstorm our project's scope and functionality by creating  wireframes, discussing required technologies, and finalizing our team's roles and responsibilities. We  split into two mini groups to work on the front and back end of the project, and met every couple of days to ensure we were on track and to avoid merge conflicts while pushing and pulling our code. We decided to use several API's for the dictionary and thesaurus functionality for the user. We mob programmed some aspects of the front and back end to ensure each team member had an understanding.
+A week before the project started, we brainstormed our project's scope and functionality by creating  wireframes, discussing required technologies, and finalizing each member's roles and responsibilities. Two worked on the back end and the other two worked on the front end. However, we mob programmed some aspects of the front and back end to ensure each team member had an understanding of the code used. At the end of each day, we had quick meetings to ensure we were on track and to avoid merge conflicts while pushing and pulling our code on github. 
 
 ## Site Walkthrough
 
  ### Home Page
-The home page is the main hub of the site. Users are able to learn more about the writeIT via the FAQ's page, go to the dashboard to edit their profile, add friends, and engage with the community on shared writing topics of interest.
+The home page is the main hub of the site. Users are able to learn more about writeIT via the FAQ's page, go to the dashboard to edit their profile or add friends, and engage with the community in the forums on shared writing topics of interest.
 
 <p align='center'>
   <img src="public/home.png">
 </p>
 
-### User Login Page
-User login in page after they have registered and provided detailed information such as their twitter handle,occupation and location.
+### User Login
+Users who have registered and provided information such as their twitter handle,occupation, and location can sign in and start writing and engaging.
 
 <p align='center'>
   <img src="public/login.png">
@@ -47,7 +47,7 @@ User login in page after they have registered and provided detailed information 
 
 
  ### Resources
- The resources page provides writers with a top ten list of books to help guide them though various aspects of the writing process. 
+ The resources page provides writers with a list of books to help guide them though various aspects of the writing process. 
 
 <p align='center'>
   <img src="public/resources.png">
@@ -55,7 +55,7 @@ User login in page after they have registered and provided detailed information 
 
 
  ### About
- The about page gives visitors an overview of writeIT and what the experience they can expect when deciding to join the site. 
+ The about page gives visitors an overview of writeIT and the experience they can expect when deciding to join the site. 
 
 <p align='center'>
   <img src="public/about.png">
