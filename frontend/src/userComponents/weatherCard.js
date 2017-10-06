@@ -1,10 +1,10 @@
 import React from 'react';
 
 
-const weatherCard = () =>{
+const WeatherCard = () =>{
     return (
         <div>weatherCard!</div>
     )
 }
 
-export default weatherCard; 
+export { WeatherCard }; 

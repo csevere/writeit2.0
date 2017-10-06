@@ -6,6 +6,7 @@ import ScrollableAnchor from 'react-scrollable-anchor';
 class Faqs extends Component{
 	constructor(props) {
 		super(props);
+		
 		this.toggle = this.toggle.bind(this);
 		this.toggle2 = this.toggle2.bind(this);
 		this.toggle3 = this.toggle3.bind(this);
@@ -224,4 +225,4 @@ class Faqs extends Component{
 
 
 
-export default Faqs;
+export { Faqs };

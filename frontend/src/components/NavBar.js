@@ -5,8 +5,7 @@ import { Form, FormGroup} from 'react-bootstrap';
 // import {Autocomplete} from 'react-autocomplete';
 import {connect} from 'react-redux';
 import NavBarTest from '../tester/NavBarTest';
-import Login from '../containers/Login'; 
-import Register from '../containers/Register'; 
+import {Login, Register} from '../containers';
 import $ from 'jquery'; 
 
 class NavBar extends Component{
@@ -114,4 +113,4 @@ function mapStateToProps(state){
 	
 
 // export default NavBar; 
-export default connect(mapStateToProps)(NavBar)
+export {NavBar}; connect(mapStateToProps);

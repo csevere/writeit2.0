@@ -8,4 +8,4 @@ const Loading = ({ type, color }) => (
     
 );
  
-export default Loading;
+export {Loading };

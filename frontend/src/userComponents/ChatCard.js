@@ -8,4 +8,4 @@ const ChatCard = () => {
     )
 }
 
-export default ChatCard; 
+export { ChatCard }; 

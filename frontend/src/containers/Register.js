@@ -10,7 +10,7 @@ import RegisterAction from '../actions/RegisterAction';
 // Because this is a container, we need connect from react-redux!
 import {connect} from 'react-redux';
 
-class Register extends Component{
+export class Register extends Component{
 	constructor(props) {
 		super(props);
 		this.state = {
@@ -171,8 +171,7 @@ function mapDispatchToProps(dispatch){
 	}, dispatch)
 }
 
-// export default Register;
-export default connect(mapStateToProps,mapDispatchToProps)(Register);
+connect(mapStateToProps,mapDispatchToProps)(Register);
 
 
 

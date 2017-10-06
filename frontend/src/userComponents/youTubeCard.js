@@ -1,10 +1,10 @@
 import React from 'react'; 
 
 
-const youTubeCard = () => {
+const YouTubeCard = () => {
     return(
         <div>YouTubeCard</div>
     )
 };
 
-export default youTubeCard; 
+export { YouTubeCard }; 

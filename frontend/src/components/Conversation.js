@@ -7,12 +7,13 @@ import $ from 'jquery';
 
 
 
-class Conversations extends Component{
+class Conversation extends Component{
+    constructor(props) {
+		super(props);
 
+        this.handleSubmit = this.handleSubmit.bind(this);
+    } 
 
-	this.handleSubmit = this.handleSubmit.bind(this);
-    
-    }
 
     handleSubmit(event){
       event.preventDefault();
@@ -69,3 +70,5 @@ class Conversations extends Component{
 		)
 	}
 }
+
+export { Conversation }; 

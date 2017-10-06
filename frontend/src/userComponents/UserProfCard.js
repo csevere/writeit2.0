@@ -10,4 +10,4 @@ const UserProfCard  = () =>{
     )
 }
 
-export default UserProfCard;  
+export { UserProfCard };  

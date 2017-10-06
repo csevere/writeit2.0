@@ -335,7 +335,8 @@ function mapDispatchToProps(dispatch){
 }
 
 // export default tChapters;
-export default connect(mapStateToProps,mapDispatchToProps)(Chapters);
+export {Chapters}; 
+connect(mapStateToProps,mapDispatchToProps);
 
 
 

@@ -1,9 +1,11 @@
 import React, {Component} from 'react';
 import { Container, Row, Col } from 'reactstrap';
-import UserNav from './UserNav'; 
+import { UserNav } from './'; 
+
+// import { Header } from './src/components/common';
 
 
-class parentUser extends Component{
+class ParentUser extends Component{
     constructor(props){
         super(props);
     }
@@ -21,7 +23,7 @@ class parentUser extends Component{
     }
 }
 
-export default parentUser; 
+export { ParentUser }; 
 
 
 

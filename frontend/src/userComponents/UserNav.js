@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import { TabContent, TabPane, Nav, NavItem, NavLink, Row, Col} from 'reactstrap';
 import classnames from 'classnames';
-import Dashboard from './Dashboard'; 
+import { Dashboard } from './'; 
 
 class UserNav extends Component{
 
@@ -86,4 +86,4 @@ class UserNav extends Component{
     }
 }
 
-export default UserNav; 
+export { UserNav }; 

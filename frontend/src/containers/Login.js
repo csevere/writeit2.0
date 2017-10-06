@@ -10,7 +10,7 @@ import LoginAction from '../actions/LoginAction';
 import {connect} from 'react-redux';
 
 
-class Login extends Component{
+export class Login extends Component{
 	constructor(props) {
 		super(props);
 		this.state = {
@@ -123,8 +123,7 @@ function mapDispatchToProps(dispatch){
 	}, dispatch)
 }
 
-// export default Register;
-export default connect(mapStateToProps,mapDispatchToProps)(Login);
+connect(mapStateToProps,mapDispatchToProps)(Login);
 
 
 
