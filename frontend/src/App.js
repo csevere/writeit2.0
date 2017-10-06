@@ -10,7 +10,9 @@ import Footer from './components/Footer';
 import Home from './components/Home'; 
 
 
-import UserProfile from './components/UserProfile';
+// import UserProfile from './components/UserProfile';
+import ParentUser from './userComponents/ParentUser'; 
+
 import tOtherUser from './tester/tOtherUser';
 import NewBook from './components/NewBook';
 import tResultsPage from './tester/tResultsPage';
@@ -84,11 +86,9 @@ class App extends Component {
               <Route exact path = '/loading' component ={Loading}/>
               <Route exact path='/test' component={NavBarTest} />
              
-              <Route exact path="/signup" component= {Register} />
-              <Route exact path="/login" component= {Login} />
               <Route exact path="/" component= {Home} /> 
 
-              <Route exact path="/user" component= {UserProfile} />
+              <Route exact path="/user" component= {ParentUser} />
               <Route exact path = "/profile/:profile" component = {tOtherUser}/>
               <Route exact path = "/profiles/" component = {tResultsPage}/>
 
@@ -133,3 +133,6 @@ class App extends Component {
 
 export default App;
 // <Route exact path="/" component= {Home} /> 
+
+// <Route exact path="/signup" component= {Register} />
+// <Route exact path="/login" component= {Login} />

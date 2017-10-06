@@ -44,7 +44,6 @@ class UserProfile extends Component{
     }
 
 
-
     handlePost(event){
         event.preventDefault();
 
@@ -122,9 +121,9 @@ class UserProfile extends Component{
 
     render(){
 
-      if(this.props.registerResponse.name === undefined){
-        this.props.history.push('/login')
-      }
+        if(this.props.registerResponse.name === undefined){
+            this.props.history.push('/login')
+        }
 
 
         var profilepic = this.state.picData.picture;
@@ -147,32 +146,22 @@ class UserProfile extends Component{
         this.state.bookData.map((book, index)=>{
            var link = '/write/' +  book.title;
            bookArray.push(
+                <div className = "row works col-sm-6 text-center">
+                    <div className="row">
+                        {book.title}
+                    </div>
+                    <img className="book-image" src="/images/profile-bg.jpg"/>
 
+                    <div className = "row">
+                        <Link to={link}><button className="btn-primary btn edit-button">Edit</button></Link>
+                    </div>
 
-                       <div className = "row works col-sm-6 text-center">
-                           <div className="row">
-                               {book.title}
-                           </div>
-                           <img className="book-image" src="/images/profile-bg.jpg"/>
+                    <div className="row">
 
-                           <div className = "row">
-                               <Link to={link}><button className="btn-primary btn edit-button">Edit</button></Link>
-                           </div>
+                    </div>
 
-                           <div className="row">
-
-
-                           </div>
-
-
-
-
-
-                       </div>
-
-
-
-           )
+                </div>
+            )
         });
 
         this.state.postData.map((post, index)=>{ 
@@ -184,7 +173,7 @@ class UserProfile extends Component{
                     <hr/>
                 </div>
 
-           )
+            )
         });
 
 
@@ -192,7 +181,6 @@ class UserProfile extends Component{
         return(
             <div>
                 <Grid className = "profile">
-        
                     <Row>
                          <div className = "container-fluid header">
 
@@ -239,8 +227,6 @@ class UserProfile extends Component{
                                         <li>
                                             <Button className="btn btn-secondary" style = {{background: "white"}}><h4>{this.state.followData} Followers</h4></Button>
                                        </li>
-
-
 
                                     </ul>
                                   </div>
