@@ -171,7 +171,7 @@ function mapDispatchToProps(dispatch){
 	}, dispatch)
 }
 
-connect(mapStateToProps,mapDispatchToProps)(Register);
+export default connect(mapStateToProps,mapDispatchToProps)(Register);
 
 
 

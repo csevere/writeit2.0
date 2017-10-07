@@ -1,10 +1,31 @@
 import React from 'react';
+import  {Timeline} from 'react-twitter-widgets';
 
-const twitterCard = () =>{
+const TwitterCard = () =>{
 
     return(
-        <div>Twitter!</div>
+        <div>
+        <Timeline 
+        
+            dataSource={{
+            
+                sourceType: 'profile',
+                screenName: 'IntergalacticQ'
+            }}
+
+            options={{
+
+                username: 'IntergalacticQ',
+                height: '520.188'
+            }}
+
+
+            onLoad={() => console.log('Timeline is loaded!')}
+        />
+
+        
+        </div>
     )
 }
 
-export default twitterCard; 
+export {TwitterCard};  

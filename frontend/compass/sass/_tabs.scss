@@ -1,0 +1,11 @@
+@import 'variables'; 
+
+.usernav{
+    .nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
+        color: #fff !important;
+        background-color:$blue !important;
+        opacity: 0.9;
+        font-family: 'Hind', sans-serif;  
+    }
+}
+

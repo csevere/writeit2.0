@@ -7,3 +7,5 @@ export * from './UserNav';
 export * from './UserProfCard';
 export * from './WeatherCard';
 export * from './YouTubeCard';
+export * from './ExCard'; 
+export * from './Notes'; 

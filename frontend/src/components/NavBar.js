@@ -5,7 +5,8 @@ import { Form, FormGroup} from 'react-bootstrap';
 // import {Autocomplete} from 'react-autocomplete';
 import {connect} from 'react-redux';
 import NavBarTest from '../tester/NavBarTest';
-import {Login, Register} from '../containers';
+import Register from '../containers/Register';
+import Login from '../containers/Login'; 
 import $ from 'jquery'; 
 
 class NavBar extends Component{
@@ -46,7 +47,7 @@ class NavBar extends Component{
 			var rightBar = [
 				<Nav className="ml-auto" navbar>
 					<NavItem>
-					   <NavLink><Button outline color = "light" onClick = {this.toggle1} >Login</Button></NavLink>
+					   <NavLink><Button outline color = "light" onClick = {this.toggle1}>Login</Button></NavLink>
 					</NavItem>
 					<NavItem>
 					  <NavLink><Button outline color = "light" onClick = {this.toggle2} >Sign Up</Button></NavLink>
@@ -113,4 +114,4 @@ function mapStateToProps(state){
 	
 
 // export default NavBar; 
-export {NavBar}; connect(mapStateToProps);
+export default connect(mapStateToProps)(NavBar);

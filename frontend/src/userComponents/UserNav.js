@@ -25,7 +25,7 @@ class UserNav extends Component{
 
     render(){
         return(
-            <div className = "py-3 mb-3">
+            <div className = "py-3 mb-3 usernav">
                 <Nav tabs>
                     <NavItem>
                         <NavLink
@@ -56,7 +56,7 @@ class UserNav extends Component{
                 </Nav>
 
                 <TabContent activeTab={this.state.activeTab}>
-                    <TabPane tabId="1">
+                    <TabPane style={{ backgroundColor: '#e0e0de'}} tabId="1">
                         <Row>
                             <Col sm="12">
                                 <Dashboard />

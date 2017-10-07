@@ -258,18 +258,107 @@
   font-size: 20px;
 }
 
-/* line 7, ../../compass/sass/styles.scss */
+/* line 4, ../../compass/sass/_tabs.scss */
+.usernav .nav-tabs .nav-link.active, .usernav .nav-tabs .nav-item.show .nav-link {
+  color: #fff !important;
+  background-color: #0074d9 !important;
+  opacity: 0.9;
+  font-family: 'Hind', sans-serif;
+}
+
+/* line 1, ../../compass/sass/_notes.scss */
+.app {
+  margin-top: 20px;
+}
+/* line 5, ../../compass/sass/_notes.scss */
+.app #note-add {
+  margin-bottom: 15px;
+}
+/* line 9, ../../compass/sass/_notes.scss */
+.app .note-box {
+  font-size: 14px;
+  padding: 15px;
+  margin-top: 0;
+  margin-bottom: 5px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+/* line 18, ../../compass/sass/_notes.scss */
+.app .alerts {
+  margin-left: 15px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #3c763d;
+}
+/* line 25, ../../compass/sass/_notes.scss */
+.app .panel {
+  box-shadow: 2px 2px 4px #868e96;
+  margin-bottom: 13px;
+}
+/* line 30, ../../compass/sass/_notes.scss */
+.app .panel-body {
+  background-color: #f8f9fa;
+  color: #1b1e21;
+  padding: 10px;
+  border-radius: 0.25rem;
+}
+/* line 37, ../../compass/sass/_notes.scss */
+.app label {
+  font-size: 18px;
+}
+/* line 42, ../../compass/sass/_notes.scss */
+.app .delete {
+  font-weight: bold;
+  font-size: 22px;
+  margin-top: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  border-style: none;
+}
+/* line 51, ../../compass/sass/_notes.scss */
+.app .delete:hover {
+  text-decoration: none;
+  background-color: #ffffff;
+  color: #777777;
+}
+/* line 57, ../../compass/sass/_notes.scss */
+.app .green {
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
+}
+/* line 62, ../../compass/sass/_notes.scss */
+.app .red {
+  background-color: #f2dede;
+  border-color: #ebccd1;
+}
+/* line 67, ../../compass/sass/_notes.scss */
+.app .blue {
+  background-color: #d9edf7;
+  border-color: #bce8f1;
+}
+/* line 72, ../../compass/sass/_notes.scss */
+.app .orange {
+  background-color: #fcf8e3;
+  border-color: #faebcc;
+}
+
+/* line 2, ../../compass/sass/_dashboard.scss */
+.userprofcard .card, .userprofcard .timeline-Widget {
+  box-shadow: 2px 2px 4px #868e96 !important;
+}
+
+/* line 10, ../../compass/sass/styles.scss */
 .btn-primary {
   color: #fff;
   background-color: #0074d9 !important;
   border-color: #0074d9 !important;
 }
-/* line 11, ../../compass/sass/styles.scss */
+/* line 14, ../../compass/sass/styles.scss */
 .btn-primary:hover {
   opacity: 0.7;
 }
 
-/* line 17, ../../compass/sass/styles.scss */
+/* line 20, ../../compass/sass/styles.scss */
 .btn-outline-light:hover {
   opacity: 0.9;
   background: #f8f9fa;

@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 
-import { Register, Login } from './containers'; 
-import { Home, Resources, Faqs, About, Loading, NavBar, Footer, NewBook} from './components'
+// import { Register, Login } from './containers'; 
+import NavBar from './components/NavBar'; 
+import { Home, Resources, Faqs, About, Loading, Footer, NewBook} from './components'
 
 //PROFILE PAGE
 import { ParentUser } from './userComponents'; 

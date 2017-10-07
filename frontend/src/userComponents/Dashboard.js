@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import { Container, Row, Col} from 'reactstrap';
+import { UserProfCard, TwitterCard, Notes} from './'; 
 import classnames from 'classnames';
 
 class Dashboard extends Component{
@@ -13,16 +14,16 @@ class Dashboard extends Component{
                 <div className = "db-tab py-5">
                     <Container>
                         <Row className = "first-row">
-                            <Col className = "userCard bg-success" sm = {3}>
-                                Test1
+                            <Col className = "userCard" sm = {4}>
+                                <UserProfCard/>
                             </Col>
 
-                            <Col className = "twitterCard bg-primary" sm = {3}>
-                                Test2
+                            <Col className = "twitterCard" sm = {4}>
+                                <TwitterCard/>
                             </Col>
 
-                            <Col className = "calendarCard bg-danger"  sm = {6}>
-                                Test3
+                            <Col className = "notes"  sm = {4}>
+                                <Notes/>
                             </Col>
                         </Row> 
 
