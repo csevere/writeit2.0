@@ -56,7 +56,7 @@ class UserNav extends Component{
                 </Nav>
 
                 <TabContent activeTab={this.state.activeTab}>
-                    <TabPane style={{ backgroundColor: '#e0e0de'}} tabId="1">
+                    <TabPane style={{ backgroundColor: '#e6ecf0'}} tabId="1">
                         <Row>
                             <Col sm="12">
                                 <Dashboard />

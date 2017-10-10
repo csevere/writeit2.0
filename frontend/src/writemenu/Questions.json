@@ -1,0 +1,218 @@
+[
+    {
+        "id": 0,
+        "title": "ChapterQ0",
+        "question": "What is the point of the chapter in one sentence?"
+    },
+
+    {
+        "id": 1,
+        "title": "ChapterQ1",
+        "question": "How do the scenes directly affect the plot or subplot?"
+    },
+
+    {
+        "id": 2,
+        "title": "ChapterQ2",
+        "question": "How do the scenes directly affect character development?"
+    },
+
+    {
+        "id": 3,
+        "title": "ChapterQ3",
+        "question": "How do the characters personalities come out through the dialogue?"
+    },
+
+    {
+        "id": 4,
+        "title": "ChapterQ4",
+        "question": "How do the characters personalities come out through the dialogue?"
+    },
+
+       
+    {
+        "id": 5,
+        "title": "ChapterQ5",
+        "question": "Are there places where dialogue could be replaced with action instead?"
+    },
+
+
+       
+    {
+        "id": 6,
+        "title": "ChapterQ6",
+        "question": "How much character thought and reflection is there? Is there too much?"
+    },
+
+         
+    {
+        "id": 7,
+        "title": "ChapterQ7",
+        "question": "What is the narrative POV? First, second, omniscient?"
+    },
+
+         
+    {
+        "id": 8,
+        "title": "ChapterQ8",
+        "question": "What is the POV character for the scenes?Protagonist, antagonist, or ally?"
+    },
+
+
+     
+    {
+        "id": 9,
+        "title": "ChapterQ9",
+        "question": "What is the setting for each scene?"
+    },
+
+
+         
+    {
+        "id": 10,
+        "title": "ChapterQ10",
+        "question": "How important is the setting to the character?"
+    },
+
+
+         
+    {
+        "id": 11,
+        "title": "ChapterQ11",
+        "question": "How important is the setting to the plot?"
+    },
+
+
+         
+    {
+        "id": 12,
+        "title": "ChapterQ12",
+        "question": "How do the characters interact with the setting?"
+    },
+
+
+         
+    {
+        "id": 13,
+        "title": "ChapterQ13",
+        "question": "What kind of mood do the scenes have?"
+    },
+
+
+    {
+        "id": 14,
+        "title": "ChapterQ14",
+        "question": "Are the characters actions predictable or complex?"
+    },
+
+
+    {
+        "id": 15,
+        "title": "Critique15",
+        "question": "What is the point of the chapter in one sentence?"
+    },
+
+    {
+        "id": 16,
+        "title": "CritiqueQ16",
+        "question": "How do the scenes directly affect the plot or subplot?"
+    },
+
+    {
+        "id": 17,
+        "title": "CritiqueQ17",
+        "question": "How do the scenes directly affect character development?"
+    },
+
+    {
+        "id": 18,
+        "title": "CritiqueQ18",
+        "question": "How do the characters personalities come out through the dialogue?"
+    },
+
+    {
+        "id": 19,
+        "title": "CritiqueQ19",
+        "question": "How do the characters personalities come out through the dialogue?"
+    },
+
+       
+    {
+        "id": 20,
+        "title": "CritiqueQ21",
+        "question": "Are there places where dialogue could be replaced with action instead?"
+    },
+
+
+       
+    {
+        "id": 21,
+        "title": "CritiqueQ21",
+        "question": "How much character thought and reflection is there? Is there too much?"
+    },
+
+         
+    {
+        "id": 22,
+        "title": "CritiqueQ22",
+        "question": "What is the narrative POV? First, second, omniscient?"
+    },
+
+         
+    {
+        "id": 23,
+        "title": "CritiqueQ23",
+        "question": "What is the POV character for the scenes?Protagonist, antagonist, or ally?"
+    },
+
+
+     
+    {
+        "id": 24,
+        "title": "CritiqueQ24",
+        "question": "What is the setting for each scene?"
+    },
+
+
+         
+    {
+        "id": 25,
+        "title": "CritiqueQ25",
+        "question": "How important is the setting to the character?"
+    },
+
+
+         
+    {
+        "id": 26,
+        "title": "CritiqueQ26",
+        "question": "How important is the setting to the plot?"
+    },
+
+
+         
+    {
+        "id": 27,
+        "title": "CritiqueQ27",
+        "question": "How do the characters interact with the setting?"
+    },
+
+
+         
+    {
+        "id": 28,
+        "title": "CritiqueQ28",
+        "question": "What kind of mood do the scenes have?"
+    },
+
+
+    {
+        "id": 29,
+        "title": "CritiqueQ29",
+        "question": "Are the characters actions predictable or complex?"
+    }
+
+
+
+   
+]

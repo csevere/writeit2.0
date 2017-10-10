@@ -181,31 +181,31 @@ class Chapters extends Component{
                                 <div className = "slick-form 1">
                                     <Form onSubmit={this.handleChapters} >
                                         <FormGroup controlId="formControlsTextarea">
-                                            <ControlLabel>What is the point of the chapter in one sentence?</ControlLabel>
+                                            <ControlLabel>q0</ControlLabel>
                                             <FormControl value={scene_number} id='scene_number' componentClass="textarea" placeholder='scene_number' onChange={this.changeChapter}/>
 
                                         </FormGroup>
 
                                         <FormGroup controlId="formControlsTextarea" defaultValue={scene_plot}>
-                                            <ControlLabel>How do the scenes directly affect the plot or subplot?</ControlLabel>
+                                            <ControlLabel>q1</ControlLabel>
                                             <FormControl value={scene_plot} id="scene_plot" type='input'   componentClass="textarea" placeholder="scene_plot" onChange={this.changeChapter}/>
                                         </FormGroup>
 
 
                                         <FormGroup controlId="formControlsTextarea">
-                                            <ControlLabel>How do the scenes directly affect character development?</ControlLabel>
+                                            <ControlLabel>q2</ControlLabel>
                                             <FormControl value={scene_char1} id="scene_char1" componentClass="textarea" placeholder="scene_char1" onChange={this.changeChapter}/>
                                         </FormGroup>
 
 
                                         <FormGroup controlId="formControlsTextarea">
-                                            <ControlLabel>How do the characters personalities come out through the dialogue?</ControlLabel>
+                                            <ControlLabel>q3</ControlLabel>
                                             <FormControl value={scene_dialogue} id="scene_dialogue" componentClass="textarea" placeholder="scene_dialogue" onChange={this.changeChapter}/>
 
                                         </FormGroup>
 
                                         <FormGroup controlId="formControlsTextarea">
-                                            <ControlLabel>What are the major conflicts in the scenes?</ControlLabel>
+                                            <ControlLabel>q4</ControlLabel>
                                             <FormControl value={scene_conflict} id="scene_conflict" componentClass="textarea" placeholder="scene_conflict" onChange={this.changeChapter}/>
                                                 {scene_conflict}
                                         </FormGroup>
@@ -219,29 +219,29 @@ class Chapters extends Component{
                                 <div className = "slick-form 2">
                                     <Form onSubmit={this.handleChapters}>
                                         <FormGroup controlId="formControlsTextarea">
-                                            <ControlLabel>Are there places where dialogue could be replaced with action instead?</ControlLabel>
+                                            <ControlLabel>q5</ControlLabel>
                                             <FormControl value={relevant_dialogue} id="relevant_dialogue" componentClass="textarea" placeholder="relevant_dialogue" onChange={this.changeChapter}/>
                                         </FormGroup>
 
                                         <FormGroup controlId="formControlsTextarea">
-                                            <ControlLabel>How much character thought and reflection is there? Is there too much?</ControlLabel>
+                                            <ControlLabel>q6</ControlLabel>
                                             <FormControl value={char_thought} id="char_thought" componentClass="textarea" placeholder="char_thought" onChange={this.changeChapter}/>
                                         </FormGroup>
 
 
                                         <FormGroup controlId="formControlsTextarea">
-                                            <ControlLabel>What is the narrative POV? First, second, omniscient?</ControlLabel>
+                                            <ControlLabel>q7</ControlLabel>
                                             <FormControl value={pov} id="pov" componentClass="textarea" placeholder="pov" onChange={this.changeChapter}/>
                                         </FormGroup>
 
 
                                         <FormGroup controlId="formControlsTextarea">
-                                            <ControlLabel>What is the POV character for the scenes?Protagonist, antagonist, or ally?</ControlLabel>
+                                            <ControlLabel>q8</ControlLabel>
                                             <FormControl value={pov_char} id="pov_char" componentClass="textarea" placeholder="pov_char" onChange={this.changeChapter}/>
                                         </FormGroup>
 
                                         <FormGroup controlId="formControlsTextarea">
-                                            <ControlLabel>What is the setting for each scene?</ControlLabel>
+                                            <ControlLabel>q9</ControlLabel>
                                             <FormControl value={setting} id="setting" componentClass="textarea" placeholder="setting" onChange={this.changeChapter}/>
                                         </FormGroup>
 
@@ -254,28 +254,28 @@ class Chapters extends Component{
                                 <div className = "slick-form 3">
                                     <Form onSubmit={this.handleChapters}>
                                         <FormGroup controlId="formControlsTextarea">
-                                            <ControlLabel>How important is the setting to the character?</ControlLabel>
+                                            <ControlLabel>q10</ControlLabel>
                                             <FormControl value={setting_char} id="setting_char" componentClass="textarea" placeholder="setting_char" onChange={this.changeChapter}/>
                                         </FormGroup>
 
                                         <FormGroup controlId="formControlsTextarea">
-                                            <ControlLabel>How important is the setting to the plot?</ControlLabel>
+                                            <ControlLabel>q11</ControlLabel>
                                             <FormControl value={setting_plot} id="setting_plot" componentClass="textarea" placeholder="setting_plot" onChange={this.changeChapter}/>
                                         </FormGroup>
 
                                         <FormGroup controlId="formControlsTextarea">
-                                            <ControlLabel>How do the characters interact with the setting?</ControlLabel>
+                                            <ControlLabel>q12</ControlLabel>
                                             <FormControl value={setting_rev} id="setting_rev" componentClass="textarea" placeholder="setting_rev" onChange={this.changeChapter}/>
                                         </FormGroup>
 
 
                                         <FormGroup controlId="formControlsTextarea">
-                                            <ControlLabel>What kind of mood do the scenes have?</ControlLabel>
+                                            <ControlLabel>q13</ControlLabel>
                                             <FormControl value={scene_mood} id="scene_mood" componentClass="textarea" placeholder="scene_mood" onChange={this.changeChapter}/>
                                         </FormGroup>
 
                                         <FormGroup controlId="formControlsTextarea">
-                                            <ControlLabel>Are the characters actions predictable or complex?</ControlLabel>
+                                            <ControlLabel>q14</ControlLabel>
                                             <FormControl value={scene_char2} id="scene_char2" componentClass="textarea" placeholder="scene_char2" onChange={this.changeChapter}/>
                                         </FormGroup>
 
